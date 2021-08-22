@@ -48,6 +48,7 @@
  */
 html {
 	font-size: 10px;
+	
 }
 
 @media only screen and (max-width:1024px) {
@@ -157,6 +158,8 @@ p.lead {
 	font-size: 2rem;
 	line-height: 1.8;
 	color: #888888;
+	text-align: justify;
+	text-justify: inter-word;
 }
 @media only screen and (max-width:768px) {
 	p.lead {
@@ -1492,7 +1495,7 @@ header .logo a {
 #about {
 	background: #FFFFFF;
 	padding-top: 12rem;
-	padding-bottom: 15rem;
+	padding-bottom: 5rem;
 }
 #about .section-intro {
 	margin-bottom: 3rem;
@@ -2481,5 +2484,56 @@ footer .copyright span:last-child::after {
 #go-top a:hover {
 	background: #000000;
 }
+
+
+
+
+/* Float four columns side by side */
+#blog {
+	background: #ffffff;
+	
+	padding-bottom: 8rem;
+}
+
+#blog-column {
+	float: left;
+	width: 25%;
+	padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  #blog-row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  #blog-row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+	#blog-column {
+	  width: 100%;
+	  display: block;
+	  margin-bottom: 20px;
+	}
+  }
+  
+  /* Style the counter cards */
+  #blog-card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding-bottom: 16px;
+	text-align: center;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+  }
+  #blog-text{
+	  margin-left: 16px;
+	  margin-right: 16px;
+  }
+
+  #blog-img {  width: 100%; overflow:hidden; border-radius: 5px; }
+  #blog-a{ display: block; height: 100%;}
 
 /*# sourceMappingURL=main.css.map */
