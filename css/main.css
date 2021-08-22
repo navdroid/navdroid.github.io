@@ -2489,23 +2489,23 @@ footer .copyright span:last-child::after {
 
 
 /* Float four columns side by side */
-#blog {
+.blog {
 	background: #ffffff;
 	
 	padding-bottom: 8rem;
 }
 
-#blog-column {
+.blog-column {
 	float: left;
 	width: 25%;
 	padding: 0 10px;
   }
   
   /* Remove extra left and right margins, due to padding */
-  #blog-row {margin: 0 -5px;}
+  .blog-row {margin: 0 -5px;}
   
   /* Clear floats after the columns */
-  #blog-row:after {
+  .blog-row:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -2513,7 +2513,7 @@ footer .copyright span:last-child::after {
   
   /* Responsive columns */
   @media screen and (max-width: 600px) {
-	#blog-column {
+	.blog-column {
 	  width: 100%;
 	  display: block;
 	  margin-bottom: 20px;
@@ -2521,19 +2521,19 @@ footer .copyright span:last-child::after {
   }
   
   /* Style the counter cards */
-  #blog-card {
+  .blog-card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	padding-bottom: 16px;
 	text-align: center;
 	background-color: #f1f1f1;
 	border-radius: 5px;
   }
-  #blog-text{
+  .blog-text{
 	  margin-left: 16px;
 	  margin-right: 16px;
   }
 
-  #blog-img {  width: 100%; overflow:hidden; border-radius: 5px; }
-  #blog-a{ display: block; height: 100%;}
+  .blog-img {  width: 100%; overflow:hidden; border-radius: 5px; }
+  .blog-a{ display: block; height: 100%;}
 
 /*# sourceMappingURL=main.css.map */
